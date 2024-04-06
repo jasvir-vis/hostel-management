@@ -1,0 +1,370 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }  
+  .navbar {
+  
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+    .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: orange;
+  }
+
+  .nav-links li::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #019fb6;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+      }
+    .nav-links li:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .cta-btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Use your preferred color */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .cta-btn a:hover {
+    background-color: #c0392b; /* Change to a darker color on hover */
+  }
+
+  .jas{
+    height: 60vh;
+    width: 100%;
+  }
+  .image{
+    background: rgba(0,0,0,0.5) url("hostel-image/JGI-hostel.jpg");
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: darken;
+  }
+
+  #jas{
+    transition: all 1s ease-in;
+  }
+  .burger{
+    width: 5%;
+    position: absolute;
+    top: 30px;
+    right: 5%;
+  }
+  .line{
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin-top: 4px;
+  }
+
+/* first section of site */
+  .para{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .service{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: navy;
+  }
+
+  @media only screen and (min-width:768px) and (max-width:1280px){
+    .rounded-0{
+      margin-left: 40px;
+    }
+    .hi{
+      display: none;
+      opacity: 0;
+    }
+  }
+  @media only screen and (min-width:300px) and (max-width:768px){
+    .rounded-0{
+      margin-left: 60px;
+    }
+    .hi{
+      display: none;
+      opacity: 0;
+    }
+  }
+  .s1{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/pexels-nudos-adicora-11063553.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+  /* .s1:hover,.s2:hover,.s3:hover,.s4:hover,.s5:hover,.s6:hover,.s7:hover,.s8:hover{
+    height: 400px;
+    width: 380px;
+    background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 10;
+  } */
+  .s2{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/washroom.jpeg");
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+    
+  }
+  .s3{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/wifi-wireless-router.avif");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+    
+  }
+
+  .s4{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/mmpsmess1Old.png");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+  .s5{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/Track.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+  .s6{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/theater.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+  .s7{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/night.webp");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+  .s8{
+    height: 300px;
+    width: 280px;
+    background: rgba(0,0,0,0.6) url("hostel-image/parking.webp");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 2s ease-in;
+  }
+
+   #first,#second,#third,#four,#five{
+    opacity: 0;
+   }
+  .first,.second,.third,.four,.five{
+    animation-name: first;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  @keyframes first {
+    0%{
+      transform: translateY(50%);
+    }
+    100%{
+      transform: translateY(0);
+
+    } 
+  }
+
+  .black{
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 91px;
+    rotate: -1deg;
+    margin-top: -25px;
+  }
+ 
+  .fa-2x{
+    background: 
+    linear-gradient(orange 0 0) no-repeat
+     calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+  transition: .2s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  }
+  .fa-2x:hover{
+    padding: 5px;
+    --p: 100%;
+    --t: .2s;
+    color: #fff;
+  }
+
+  .ab{
+    background-color: lightcyan;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    /* perspective: 1000px; */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    /* transform-style: preserve-3d; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card-back:hover{
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    opacity: 1;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* -webkit-backface-visibility: hidden; */
+    /* backface-visibility: hidden; */
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    opacity: 0;
+    z-index: 10;
+  }
+  
+  .flip-card-back{
+    color: white;
+    /* transform: rotateY(0deg);w */
+    z-index: 2;
+  }
+
+/* about */
+  .ap-services li {
+    list-style: none;
+    font-size: 20px;
+    color: #707079;
+    line-height: 42px;
+}
+
+.about-page-services .ap-service-item {
+  position: relative;
+  height: 420px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-blend-mode: darken;
+}
+.about-page-services .ap-service-item .api-text {
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+  
+.video-section {
+  height: 400px;
+  padding-top: 140px;
+}
+.video-section .video-text {
+  text-align: center;
+}
+
+.gallery-section {
+  padding-bottom: 80px;
+}
+.gallery-section .section-title {
+  margin-bottom: 38px;
+}
+.spad {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.gallery-item {
+  height: 279px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-item .gi-text {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.gallery-item:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 25, 26, 0.3);
+  content: "";
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.gallery-item:hover .gi-text{
+  opacity: 1;
+}
